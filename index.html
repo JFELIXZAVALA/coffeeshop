@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Inconsolata"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+
+  <body>
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s3">
+          <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+        </div>
+        <div class="w3-col s3">
+
+          <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+         
+        </div>
+        <div class="w3-col s3">
+          <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+        </div>
+        <div class="w3-col s3">
+        
+          <a href="tel:817-555-5555" class="w3-button w3-block w3-black"> (817) 465-9638</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+      <div
+        class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small"
+      >
+        <span class="w3-tag">Open from 6am to 5pm</span>
+      </div>
+      <div class="w3-display-middle w3-center">
+        <span class="w3-text-white w3-margin-top"
+          ><img src="img/cafefelix.png"
+        /></span>
+      </div>
+      <div class="w3-display-bottomright w3-center w3-padding-large">
+        <span class="w3-text-white"
+          >15 N. Adams street, Suite 5015, Dallas, TX 75208</span
+        >
+      </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+      <!-- About Container -->
+      <div class="w3-container" id="about">
+        <div class="w3-content" style="max-width: 700px">
+          <h5 class="w3-center w3-padding-64">
+            <span class="w3-tag w3-wide">ABOUT THE CAFE</span>
+          </h5>
+
+          <p class="w3-center">
+            Located in the heart of the Arts District Felix Café was founded in
+            1986 by Mr. Felix with one goal in mind. To brew the finest cup of
+            coffee in North Texas. His mission lives on today with every cup we
+            serve.
+          </p>
+
+          <img
+            src="/img/coffeeshop2.jpg"
+            style="width: 100%; max-width: 1000px"
+            class="w3-margin-top"
+          />
+        </div>
+      </div>
+
+      <!-- Menu Container -->
+      <div class="w3-container" id="menu">
+        <div class="w3-content" style="max-width: 700px">
+          <h5 class="w3-center w3-padding-48">
+            <span class="w3-tag w3-wide">THE MENU</span>
+          </h5>
+
+          <div class="w3-row w3-center w3-card w3-padding">
+            <a
+              href="javascript:void(0)"
+              onclick="openMenu(event, 'Eat');"
+              id="myLink"
+            >
+              <div class="w3-col s6 tablink">Coffee</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+              <div class="w3-col s6 tablink">Food</div>
+            </a>
+          </div>
+
+          <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+            <h5>House Coffee</h5>
+            <p class="w3-text-grey">100% Arabica Coffee 2.50</p>
+            <br />
+            <h5>Latte</h5>
+            <p class="w3-text-grey">Vanilla, Caramel 3.00</p>
+            <br />
+            <h5>Cappuccino</h5>
+            <p class="w3-text-grey">Steamed milk foam, Double espresso 4.50</p>
+            <br />
+
+            <h5>Macchiato</h5>
+            <p class="w3-text-grey">Caramel, Vanilla, Espresso 4.50</p>
+            <br />
+            <h5>Cold Brew</h5>
+            <p class="w3-text-grey">Cold-pressed for 24 hours 4.50</p>
+          </div>
+
+          <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+            <h5>Avocado Toast</h5>
+            <p class="w3-text-grey">
+              Toasted wheat bread with avocado spread 6.00
+            </p>
+            <br />
+            <h5>Honey Almond Granola with Fruits</h5>
+            <p class="w3-text-grey">
+              Natural cereal of honey toasted oats, raisins, blueberries, and almonds
+              7.00
+            </p>
+            <br />
+
+            <h5>Belgian Waffle</h5>
+            <p class="w3-text-grey">
+              Vanilla flavored batter with malted flour and powdered sugar 8.00
+            </p>
+            <br />
+
+            <h5>Scrambled eggs</h5>
+            <p class="w3-text-grey">
+              Scrambled eggs, bacon or chorizo, with a side of toast or tortilla
+              7.50
+            </p>
+            <br />
+
+            <h5>Pancakes</h5>
+            <p class="w3-text-grey">Original, Blueberry, Walnuts 8.50</p>
+          </div>
+          <img
+            src="/img/coffee-milk.jpg"
+            style="width: 100%; max-width: 1000px; margin-top: 32px"
+          />
+        </div>
+      </div>
+
+      <!-- Contact/Area Container -->
+      <div class="w3-container" id="where" style="padding-bottom: 32px">
+        <div class="w3-content" style="max-width: 700px">
+          <h5 class="w3-center w3-padding-48">
+            <span class="w3-tag w3-wide">WHERE TO FIND US</span>
+          </h5>
+
+   
+
+         
+          <p>
+            <strong>Address:</strong> 15 N. Adams street, Suite 5015, Dallas, TX
+            75208
+          </p>
+         
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7981.2592316194805!2d-96.83699670894016!3d32.746992883542916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9986153332e3%3A0x1d29e6ffc301fb17!2sBishop%20Arts%20District%2C%20Dallas%2C%20TX%2075208!5e0!3m2!1sen!2sus!4v1643952035284!5m2!1sen!2sus"
+            width="700"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+         
+
+      <!-- End page content -->
+    </div>
+<br>
+</body>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+
+    
+
+   
+      
+      <a href="mailto: jfelixzavala@yahoo.com" target="blank"><i id="social-big" class="fa fa-envelope"></i></a>
+      <a href="https://twitter.com/GraphicFelix" target="blank"><i id="social-big" class="fa fa-facebook-square"></i></a>
+
+      <a href="https://www.youtube.com/channel/UCpo68l_fzOgV05so_EnNdyg" target="blank"><i id="social-big"class="fa fa-instagram"></i></a>
+ 
+    <a href="https://twitter.com/GraphicFelix" target="blank"><i id="social-big"class="fa fa-twitter"></i></a>
+ <p>Privacy Policy
+  |
+  Terms of Use
+ 
+  |
+  Cookie Preferences</p>
+      <p>
+        © 2022 Café Felix Company. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</html>
